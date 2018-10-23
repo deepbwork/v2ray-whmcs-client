@@ -1,0 +1,8 @@
+let config = {
+	uri: "",
+	name: "",
+	liscense: ""
+} 
+exports.getConfig = function() {
+	return config;
+}

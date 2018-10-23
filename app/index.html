@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body style="-webkit-app-region: drag;-webkit-user-select: none;">
+<div id="root"></div>
+<script>
+  if(window.utils.platform == 'win32') {
+    document.getElementById("root").setAttribute('style','margin-top: -45px;');
+  }
+  if(!window.Promise) {
+    document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+  }
+</script>
+<script src="index.js"></script>
+</body>
+</html>

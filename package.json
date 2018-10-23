@@ -1,0 +1,46 @@
+{
+  "name": "whmcs",
+  "version": "1.0.0",
+  "description": "A proxy",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder -mw --ia32",
+    "dist": "electron-builder"
+  },
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "electron-is": "^2.4.1",
+    "tcp-ping": "^0.1.1"
+  },
+  "build": {
+    "appId": "com.whmcs.v2ray",
+    "copyright": "anonymouse",
+    "productName": "proxy",
+    "asar": false,
+    "files": [
+      "!mac",
+      "!win"
+    ],
+    "mac": {
+      "extraResources": [
+        {
+          "from": "mac",
+          "to": "lib"
+        }
+      ]
+    },
+    "win": {
+      "extraResources": [
+        {
+          "from": "win",
+          "to": "lib"
+        }
+      ]
+    }
+  }
+}
